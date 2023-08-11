@@ -1,0 +1,6 @@
+data/io.github.alexkdeveloper.weather.desktop.in
+data/io.github.alexkdeveloper.weather.appdata.xml.in
+data/io.github.alexkdeveloper.weather.gschema.xml
+src/main.vala
+src/window.vala
+src/window.ui
