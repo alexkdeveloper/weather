@@ -44,15 +44,15 @@ namespace Weather {
         }
 
         private void on_about_action () {
-            string[] developers = { "Alex" };
+            string[] developers = { "Alex K" };
             var about = new Adw.AboutWindow () {
                 transient_for = this.active_window,
-                application_name = "weather",
+                application_name = "Weather",
                 application_icon = "io.github.alexkdeveloper.weather",
-                developer_name = "Alex",
+                developer_name = "Alex K",
                 version = "0.1.0",
                 developers = developers,
-                copyright = "© 2023 Alex",
+                copyright = "© 2023 Alex K",
             };
 
             about.present ();

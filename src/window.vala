@@ -93,7 +93,7 @@ namespace Weather {
 
                 on_location_updated (simple.location.latitude, simple.location.longitude);
             } else {
-
+                alert("Unable to Get Location", "Make sure location access is turned on in settings");
             }
         });
     }
@@ -116,5 +116,16 @@ namespace Weather {
             weather_info.update ();
         }
       }
+
+    private void alert (string heading, string body){
+            var dialog_alert = new Adw.MessageDialog(this, heading, body);
+            if (body != "") {
+                dialog_alert.set_body(body);
+            }
+            dialog_alert.add_response("ok", _("_OK"));
+            dialog_alert.set_response_appearance("ok", SUGGESTED);
+            dialog_alert.response.connect((_) => { dialog_alert.close(); });
+            dialog_alert.show();
+        }
     }
 }
