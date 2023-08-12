@@ -76,9 +76,19 @@ namespace Weather {
             double temp;
             weather_info.get_value_temp (GWeather.TemperatureUnit.CENTIGRADE, out temp);
             temp_label.label = _("%i°").printf ((int) temp);
-            wind_label.label = dgettext ("libgweather", weather_info.get_wind ());
-            visibility_label.label = dgettext ("libgweather", weather_info.get_visibility ());
-            pressure_label.label = dgettext ("libgweather", weather_info.get_pressure ());
+
+            double visibility;
+            weather_info.get_value_visibility (GWeather.DistanceUnit.KM, out visibility);
+            visibility_label.label = _("%i km").printf ((int) visibility);
+
+            double pressure;
+            weather_info.get_value_pressure (GWeather.PressureUnit.MM_HG, out pressure);
+            pressure_label.label = _("%i mmHg").printf ((int) pressure);
+
+            double speed;
+            GWeather.WindDirection direction;
+            weather_info.get_value_wind (GWeather.SpeedUnit.MS, out speed, out direction);
+            wind_label.label = _("%s,  %i m/s").printf (direction.to_string(), (int) speed);
           });
         }
 
