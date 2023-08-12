@@ -74,7 +74,7 @@ namespace Weather {
             weather_label.label = dgettext ("libgweather", weather_info.get_sky ());
 
             double temp;
-            weather_info.get_value_temp (GWeather.TemperatureUnit.DEFAULT, out temp);
+            weather_info.get_value_temp (GWeather.TemperatureUnit.CENTIGRADE, out temp);
             temp_label.label = _("%i°").printf ((int) temp);
             wind_label.label = dgettext ("libgweather", weather_info.get_wind ());
             visibility_label.label = dgettext ("libgweather", weather_info.get_visibility ());

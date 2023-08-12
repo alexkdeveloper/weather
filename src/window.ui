@@ -59,7 +59,7 @@
                 <property name="spacing">3</property>
                 <child>
                   <object class="GtkImage">
-                    <property name="icon-name">weather-windy-symbolic</property>
+                    <property name="icon-name">wind-symbolic</property>
                     <property name="tooltip-text">Wind</property>
                   </object>
                 </child>
@@ -76,7 +76,7 @@
                 <property name="spacing">3</property>
                 <child>
                   <object class="GtkImage">
-                    <property name="icon-name">eye-open-negative-filled-symbolic</property>
+                    <property name="icon-name">open-eye-symbolic</property>
                     <property name="tooltip-text">Visibility</property>
                   </object>
                 </child>

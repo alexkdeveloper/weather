@@ -3,5 +3,8 @@
   <gresource prefix="/io/github/alexkdeveloper/weather">
     <file preprocess="xml-stripblanks">window.ui</file>
     <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
+    <file compressed="true">icons/wind-symbolic.svg</file>
+    <file compressed="true">icons/open-eye-symbolic.svg</file>
+    <file compressed="true">icons/pressure-symbolic.svg</file>
   </gresource>
 </gresources>
