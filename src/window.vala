@@ -106,7 +106,6 @@ namespace Weather {
                 simple.notify["location"].connect (() => {
                     on_location_updated (simple.location.latitude, simple.location.longitude);
                 });
-
                 on_location_updated (simple.location.latitude, simple.location.longitude);
             } else {
                 alert(_("Unable to Get Location"), _("Make sure location access is turned on in settings"));
