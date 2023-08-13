@@ -54,6 +54,13 @@ namespace Weather {
             visibility_label.label = weather_info.get_visibility ();
             pressure_label.label = weather_info.get_pressure ();
 
+            var settings = new Settings ("io.github.alexkdeveloper.weather");
+
+            settings.bind ("width", this, "default-width", SettingsBindFlags.DEFAULT);
+            settings.bind ("height", this, "default-height", SettingsBindFlags.DEFAULT);
+            settings.bind ("is-maximized", this, "maximized", SettingsBindFlags.DEFAULT);
+            settings.bind ("is-fullscreen", this, "fullscreened", SettingsBindFlags.DEFAULT);
+
             get_location ();
 
             notify["is-active"].connect (() => {
