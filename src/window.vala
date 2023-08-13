@@ -99,8 +99,7 @@ namespace Weather {
           });
         }
 
-        private void get_location () {
-
+    private void get_location () {
         get_gclue_simple.begin ((obj, res) => {
             var simple = get_gclue_simple.end (res);
             if (simple != null) {
