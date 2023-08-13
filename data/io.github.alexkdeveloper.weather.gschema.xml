@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="weather">
-	<schema id="io.github.alexkdeveloper.weather" path="/io/github/alexkdeveloper/weather/">
-	  <key name="width" type="i">
+  <schema id="io.github.alexkdeveloper.weather" path="/io/github/alexkdeveloper/weather/">
+    <key name="width" type="i">
       <default>600</default>
     </key>
     <key name="height" type="i">
@@ -13,5 +13,5 @@
     <key name="is-fullscreen" type="b">
       <default>false</default>
     </key>
-	</schema>
+  </schema>
 </schemalist>
