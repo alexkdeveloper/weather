@@ -1,8 +1,9 @@
 [Desktop Entry]
 Name=Weather
+Comment=Application for viewing the current weather
 Exec=weather
 Icon=io.github.alexkdeveloper.weather
 Terminal=false
 Type=Application
-Categories=GTK;
+Categories=GTK;Utility;
 StartupNotify=true
