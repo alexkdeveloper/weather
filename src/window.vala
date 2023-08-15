@@ -39,7 +39,7 @@ namespace Weather {
         private GWeather.Location? location = null;
         private GWeather.Info weather_info;
 
-        public Window (Gtk.Application app) {
+        public Window (Adw.Application app) {
             Object (application: app);
 
             weather_info = new GWeather.Info (location) {
